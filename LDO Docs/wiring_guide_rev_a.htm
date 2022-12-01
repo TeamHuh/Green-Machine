@@ -1,0 +1,412 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="UTF-8"><meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=5"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><meta name="msapplication-TileImage" content="/_assets/favicons/mstile-150x150.png"><title>LDO Voron Trident 300 Wiring Guide (Rev. A) | LDO Docs</title><meta name="description" content=""><meta property="og:title" content="LDO Voron Trident 300 Wiring Guide (Rev. A)"><meta property="og:type" content="website"><meta property="og:description" content=""><meta property="og:image"><meta property="og:url" content="https://docs.ldomotors.com/en/voron/voron-trident/wiring_guide_rev_a"><meta property="og:site_name" content="LDO Docs"><link rel="apple-touch-icon" sizes="180x180" href="/_assets/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="/_assets/favicons/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/_assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/_assets/favicons/favicon-16x16.png"><link rel="mask-icon" href="/_assets/favicons/safari-pinned-tab.svg" color="#1976d2"><link rel="manifest" href="/_assets/manifest.json"><script>var siteConfig = {"title":"LDO Docs","theme":"default","darkMode":false,"lang":"en","rtl":false,"company":"LDO Motors Co.,Ltd.","contentLicense":"alr","logoUrl":"/ldo_logo.svg"}
+var siteLangs = []
+</script><link type="text/css" rel="stylesheet" href="/_assets/css/app.13c0291036e30e8d000d.css"><script type="text/javascript" src="/_assets/js/runtime.js?1662418334"></script><script type="text/javascript" src="/_assets/js/app.js?1662418334"></script></head><body><div id="root"><page locale="en" path="voron/voron-trident/wiring_guide_rev_a" title="LDO Voron Trident 300 Wiring Guide (Rev. A)" description="" :tags="[]" created-at="2022-01-26T10:14:41.811Z" updated-at="2022-11-29T16:14:43.463Z" author-name="LDO" :author-id="6" editor="ckeditor" :is-published="true" toc="W3sidGl0bGUiOiJUb29scyIsImFuY2hvciI6IiN0b29scyIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IlByZS1XaXJlZCBJdGVtcyIsImFuY2hvciI6IiNwcmUtd2lyZWQtaXRlbXMiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJBYm92ZSBEZWNrIFdpcmluZyIsImFuY2hvciI6IiNhYm92ZS1kZWNrLXdpcmluZyIsImNoaWxkcmVuIjpbeyJ0aXRsZSI6IldpcmluZyB0aGUgVG9vbGhlYWQgUENCIiwiYW5jaG9yIjoiI3dpcmluZy10aGUtdG9vbGhlYWQtcGNiIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiV2lyaW5nIHRoZSBaIGVuZHN0b3AiLCJhbmNob3IiOiIjd2lyaW5nLXRoZS16LWVuZHN0b3AiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJXaXJpbmcgdGhlIFhZIGVuZHN0b3AiLCJhbmNob3IiOiIjd2lyaW5nLXRoZS14eS1lbmRzdG9wIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiV2lyaW5nIHRoZSBCdWlsZCBQbGF0ZSIsImFuY2hvciI6IiN3aXJpbmctdGhlLWJ1aWxkLXBsYXRlIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiUm91dGluZyB0aGUgTEVEIHN0cmlwcyIsImFuY2hvciI6IiNyb3V0aW5nLXRoZS1sZWQtc3RyaXBzIiwiY2hpbGRyZW4iOltdfV19LHsidGl0bGUiOiJCZWxvdyBEZWNrIFdpcmluZyIsImFuY2hvciI6IiNiZWxvdy1kZWNrLXdpcmluZyIsImNoaWxkcmVuIjpbeyJ0aXRsZSI6IlByZXBhcmluZyB0aGUgSW5sZXQiLCJhbmNob3IiOiIjcHJlcGFyaW5nLXRoZS1pbmxldCIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IlByZXBhcmluZyB0aGUgUG93ZXIgU3VwcGx5IFVuaXQiLCJhbmNob3IiOiIjcHJlcGFyaW5nLXRoZS1wb3dlci1zdXBwbHktdW5pdCIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IlByZXBhcmluZyB0aGUgQ29udHJvbGxlciAoQmlnVHJlZVRlY2ggT2N0b3B1cykiLCJhbmNob3IiOiIjcHJlcGFyaW5nLXRoZS1jb250cm9sbGVyLWJpZ3RyZWV0ZWNoLW9jdG9wdXMiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJJbnN0YWxsaW5nIHRoZSBESU4gUmFpbHMiLCJhbmNob3IiOiIjaW5zdGFsbGluZy10aGUtZGluLXJhaWxzIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiR2VuZXJhbCBQbGFjZW1lbnQiLCJhbmNob3IiOiIjZ2VuZXJhbC1wbGFjZW1lbnQiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJDb25uZWN0aW5nIFN0ZXBwZXJzIiwiYW5jaG9yIjoiI2Nvbm5lY3Rpbmctc3RlcHBlcnMiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJDb25uZWN0aW5nIElubGV0IGFuZCBQU1UiLCJhbmNob3IiOiIjY29ubmVjdGluZy1pbmxldC1hbmQtcHN1IiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiQ2hlY2twb2ludCAjMSIsImFuY2hvciI6IiNjaGVja3BvaW50LTEiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJDb25uZWN0aW5nIDI0ViBhbmQgQnVpbGQgUGxhdGUiLCJhbmNob3IiOiIjY29ubmVjdGluZy0yNHYtYW5kLWJ1aWxkLXBsYXRlIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiUmFzcGJlcnJ5IFBpIENvbm5lY3Rpb25zIiwiYW5jaG9yIjoiI3Jhc3BiZXJyeS1waS1jb25uZWN0aW9ucyIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IkNvbm5lY3RpbmcgdGhlIFRvb2xoZWFkIEJyZWFrb3V0IENhYmxlcyAoUGFydCAxKSIsImFuY2hvciI6IiNjb25uZWN0aW5nLXRoZS10b29saGVhZC1icmVha291dC1jYWJsZXMtcGFydC0xIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiQ29ubmVjdGluZyB0aGUgVG9vbGhlYWQgQnJlYWtvdXQgQ2FibGVzIChQYXJ0IDIpIiwiYW5jaG9yIjoiI2Nvbm5lY3RpbmctdGhlLXRvb2xoZWFkLWJyZWFrb3V0LWNhYmxlcy1wYXJ0LTIiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJDaGVja3BvaW50ICMyIiwiYW5jaG9yIjoiI2NoZWNrcG9pbnQtMiIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IkNvbm5lY3RpbmcgdGhlIEZpbHRlciwgUENCIEZhbnMsIExFRCBzdHJpcHMsIEV0aGVybmV0IGFuZCBEaXNwbGF5IiwiYW5jaG9yIjoiI2Nvbm5lY3RpbmctdGhlLWZpbHRlci1wY2ItZmFucy1sZWQtc3RyaXBzLWV0aGVybmV0LWFuZC1kaXNwbGF5IiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiRmluaXNoIExpbmUiLCJhbmNob3IiOiIjZmluaXNoLWxpbmUiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJOZXh0IFN0ZXBzIC0gU29mdHdhcmUvRmlybXdhcmUiLCJhbmNob3IiOiIjbmV4dC1zdGVwcy1zb2Z0d2FyZWZpcm13YXJlIiwiY2hpbGRyZW4iOltdfV19XQ==" :page-id="30" sidebar="W3siaSI6InNkaS0xIiwiayI6ImxpbmsiLCJsIjoiSG9tZSIsImMiOiJtZGktaG9tZSIsInkiOiJob21lIiwidCI6Ii8ifSx7ImkiOiJzZGktMiIsImsiOiJoZWFkZXIiLCJsIjoiR3VpZGVzICYgVHV0b3JpYWxzIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH0seyJpIjoic2RpLTMiLCJrIjoiaGVhZGVyIiwibCI6IlZvcm9uIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH1d" nav-mode="TREE" comments-enabled effective-permissions="eyJjb21tZW50cyI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6ZmFsc2UsIm1hbmFnZSI6ZmFsc2V9LCJoaXN0b3J5Ijp7InJlYWQiOmZhbHNlfSwic291cmNlIjp7InJlYWQiOmZhbHNlfSwicGFnZXMiOnsicmVhZCI6dHJ1ZSwid3JpdGUiOmZhbHNlLCJtYW5hZ2UiOmZhbHNlLCJkZWxldGUiOmZhbHNlLCJzY3JpcHQiOmZhbHNlLCJzdHlsZSI6ZmFsc2V9LCJzeXN0ZW0iOnsibWFuYWdlIjpmYWxzZX19"><template slot="contents"><div><p>&nbsp;</p>
+<p>This guide contains directions for wiring a Voron Trident 300<sup>3</sup> using the pre-cut, pre-terminated cables included in the LDO kit. <strong>Important! </strong>Mains wiring should only be performed by certified personnel trained in local regulations and safety standards. If at any point you find the images in this guide to be too small, you can check out the source images from this github location.</p>
+<h2 class="toc-header" id="tools"><a href="#tools" class="toc-anchor">¶</a> Tools</h2>
+<p>Here is a short list of tools you should prepare:</p>
+<ul>
+  <li>2.5mm Flat head screwdriver (included in kit), This screwdriver is used to manipulate the UK2.5N terminals.</li>
+  <li>PH2 Phillips screwdriver (not included in kit), This screwdriver is used on the power supply, SSR, and controller screw terminals.</li>
+  <li>Multimeter (not included in kit), Used to check connectivity.</li>
+</ul>
+<h2 class="toc-header" id="pre-wired-items"><a href="#pre-wired-items" class="toc-anchor">¶</a> Pre-Wired Items</h2>
+<p>The following items should have pre-cut lengths, labels, and crimped connectors:</p>
+<ul>
+  <li>Heatpad, joined with thermal fuse and installed on bed.</li>
+  <li>Hotend Thermistor</li>
+  <li>Hotend Cartridge</li>
+  <li>Hotend Fan</li>
+  <li>Print Cooling Fan</li>
+  <li>Z Probe</li>
+  <li>Toolhead PCB cable (<mark class="marker-yellow"><strong>Remove any zipties</strong> before installation into the cable chain)</mark></li>
+</ul>
+<p>Certain stepper motor cables are purposely left longer than needed for people with different setups. You may choose to cut them or leave them as is during wiring.&nbsp;</p>
+<h2 class="toc-header" id="above-deck-wiring"><a href="#above-deck-wiring" class="toc-anchor">¶</a> Above Deck Wiring</h2>
+<h3 class="toc-header" id="wiring-the-toolhead-pcb"><a href="#wiring-the-toolhead-pcb" class="toc-anchor">¶</a> Wiring the Toolhead PCB</h3>
+<p>The LDO toolhead PCB is for Stealthburner + Clockwork 1 extruder. &nbsp;For the Klicky probe the 24v probe pin will not be used.</p>
+<p><strong>Note: The probe 24v pin is not configurable using jumpers on the MCU.&nbsp;</strong></p>
+<figure style="width:60.59%;" class="image image_resized"><img src="/vt_wire_guide/ldotoolheadpcbsbcw1.png"></figure>
+<h3 class="toc-header" id="wiring-the-z-endstop"><a href="#wiring-the-z-endstop" class="toc-anchor">¶</a> Wiring the Z endstop</h3>
+<p>Our Z endstop (a.k.a nozzle probe) is slightly different from the official endstop, use our <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/nozzle_probe_ldo.stl">printed part</a>. The Z-endstop mounts to the extrusion using M3x25 SHCS rather than the M3x20 SHCS in the assembly manual.</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <figure style="width:86.32%;" class="image image_resized"><img src="/v2_wire_guide/z_stop_parts.jpg"></figure>
+        </td>
+        <td>
+          <figure style="width:62.02%;" class="image image_resized"><img src="/v2_wire_guide/z_stop_mount.jpg">
+            <figcaption>The mounting of the PCB uses the M2 self-tapping screws using the screw hole on the microswitch rather than 4 screws of the bottom in the assembly manual.</figcaption>
+          </figure>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<figure style="width:27.83%;" class="image image_resized"><img src="/v2_wire_guide/z_stop_final.jpg"></figure>
+<h3 class="toc-header" id="wiring-the-xy-endstop"><a href="#wiring-the-xy-endstop" class="toc-anchor">¶</a> Wiring the XY endstop</h3>
+<p>The XY endstop cable has the same 4pin JST-XH connector on both ends but only one end has a label. We recommend connecting the end with the label to the controller and the end without the label to the XY endstop PCB.</p>
+<h3 class="toc-header" id="wiring-the-build-plate"><a href="#wiring-the-build-plate" class="toc-anchor">¶</a> Wiring the Build Plate</h3>
+<p>Attach the WAGO terminals and 2x2 splicing PCB to the heatbed wiring mount. Use two heat set inserts from the front of the printed part then use two M3x6 BHCS screws to fasten the PCB. &nbsp;Use two M5x10 BHCS screws to fasten the mount onto the frame.</p>
+<figure style="width:43.87%;" class="image image_resized"><img src="/vt_wire_guide/wago_combo_mount2.png"></figure>
+<figure style="width:47.29%;" class="image image_resized"><img src="/vt_wire_guide/wago_combo_mount.jpg"></figure>
+<p>After installing the Z endstop and heatbed wiring mount to the bed frame, follow the diagram below for wiring:</p>
+<figure class="image"><img src="/vt_wire_guide/build_plate_mapping.png"></figure>
+<p>Remember to use zipties to anchor the cables near the z chain, The end result should look something like this:</p>
+<figure style="width:57.59%;" class="image image_resized"><img src="/vt_wire_guide/build_plate_wired.jpg"></figure>
+<h3 class="toc-header" id="routing-the-led-strips"><a href="#routing-the-led-strips" class="toc-anchor">¶</a> Routing the LED strips</h3>
+<p>Our kit includes two LED strips to install as ceiling lighting for your printer. Print the bar clips from the print guide and mount them at the top left and right extrusions. We recommend following the routing path shown in the diagram below:</p>
+<figure class="image"><img src="/vt_wire_guide/led_route.png"></figure>
+<p>Remember to cover the slots where your LED cables are routed with the extrusion covers provided with the kit. Please remember to mount using the printed <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/led_pcb_spacer.stl">part </a>to prevent a short with the extrusion.</p>
+<figure style="width:35.31%;" class="image image_resized"><img src="/vt_wire_guide/led_pcb_positioning.jpg"></figure>
+<h2 class="toc-header" id="below-deck-wiring"><a href="#below-deck-wiring" class="toc-anchor">¶</a> Below Deck Wiring</h2>
+<h3 class="toc-header" id="preparing-the-inlet"><a href="#preparing-the-inlet" class="toc-anchor">¶</a> Preparing the Inlet</h3>
+<p>Your kit should include a pre-wired AC inlet. Double check that the wiring correct, the final layout should be as follows:</p>
+<figure style="width:31.97%;" class="image image_resized"><img src="/v01_wire_guide/inlet_layout.png"></figure>
+<p>Take the inlet cable included in the kit and attach the wires using the above layout as reference. When wired correctly, your live wire will be protected by a fuse, and the switch on the front side of the inlet will operate correctly (lights up when turned on).&nbsp;</p>
+<h3 class="toc-header" id="preparing-the-power-supply-unit"><a href="#preparing-the-power-supply-unit" class="toc-anchor">¶</a> Preparing the Power Supply Unit</h3>
+<p>The 24V power supply unit that comes with the kit contains a switch on the side to select between 120V and 230V. <strong>Flick the switch to the correct value*</strong> before powering it on! Failing to do so can destroy the power supply!</p>
+<p>* EU Customers may receive the Meanwell RSP-200-24 to comply with local regulations, this model has a<mark class="marker-yellow"> universal AC input so there is no switch to flip in this case</mark>.</p>
+<figure style="width:31.48%;" class="image image_resized"><img src="/v2_wire_guide/psu_switch.jpg"></figure>
+<h3 class="toc-header" id="preparing-the-controller-bigtreetech-octopus"><a href="#preparing-the-controller-bigtreetech-octopus" class="toc-anchor">¶</a> Preparing the Controller (BigTreeTech Octopus)</h3>
+<p>Before installing the controller board, we need to prepare a few things:</p>
+<ul>
+  <li>Make sure the jumpers are installed correctly (refer to the photo below)</li>
+  <li>Install the stepper drivers onto the motor slots: Motor 0 to Motor 5 (Motor 6, 7 is unused)</li>
+  <li><mark class="marker-yellow"><strong>Do NOT the change the voltage selection jumpers from what is shown (24v) for the toolhead fans. &nbsp;Mixing voltages will damage the Octopus controller. &nbsp;Changes to the other jumpers will NOT change voltage from 24v to the toolhead PCB which could damage non-24v components.</strong></mark></li>
+  <li>Optional, but highly recommended: mark terminals on the PCB. In the photo below, we used a red marker to colour all the positive screws in terminals. This will help us avoid any polarity mistakes down the road.</li>
+</ul>
+<figure style="width:55.36%;" class="image image_resized"><img src="/v2_wire_guide/octopus_prep.jpg"></figure>
+<h3 class="toc-header" id="installing-the-din-rails"><a href="#installing-the-din-rails" class="toc-anchor">¶</a> Installing the DIN Rails</h3>
+<p>Our first step is to install the DIN rails. The orientation of the DIN rails in our guide differs from that of the official Voron manual. These DIN rails run from front to back. Also note that the placement of the DIN rails is not exactly symmetrical.&nbsp;</p>
+<figure style="width:46.78%;" class="image image_resized"><img src="/vt_wire_guide/s01_din_rails.jpg"></figure>
+<p>Check your layout with the following photo:&nbsp;</p>
+<ol>
+  <li>Place the left rail as close to the Z chain opening as possible without covering the opening.</li>
+  <li>Place the right rail adjacent to the rear Z motor mount.</li>
+</ol>
+<figure class="image"><img src="/vt_wire_guide/rail_close_up.png"></figure>
+<h3 class="toc-header" id="general-placement"><a href="#general-placement" class="toc-anchor">¶</a> General Placement</h3>
+<p>In this step, we will place all the major electronic components and install the wire ducts.&nbsp;</p>
+<ol>
+  <li>Place the electronic components as shown in the image below. Make sure to leave as much space as possible between the 24V power supply and UK2.5 terminals by placing terminals close to the SSR (refer to the <a class="is-external-link" href="http://docs.ldomotors.com/guides/uk25_terminal_guide">UK2.5 terminal guide</a> for installation).</li>
+  <li>Use the provided VHB tape to install the wire ducts. Follow the instructions below (in order) for cutting and placement of each duct:</li>
+</ol>
+<p><strong>A.</strong> Use a piece of 33cm duct, remove the cover and cut the base into three segments as shown in the picture - <i><strong>leave the duct cover as a single piece</strong></i>. Place the 3 segments roughly 1.5cm away from the top extrusion. Try to align the 3 segments as much as possible as we will be placing the single piece cover over all of them later.&nbsp;</p>
+<p><strong>B. </strong>Take another piece of 33cm duct and place it roughly between the 24V power supply and Octopus controller. Try to make sure there is around a 2.5cm gap between the Octopus and wire duct.&nbsp;</p>
+<p><strong>C.</strong> Take the last piece of 33cm duct and place it to the right of the octopus controller. Try to make sure there is around a 2cm gap between the Octopus and wire duct.&nbsp;</p>
+<p><strong>D.</strong> Take the remaining 50cm duct and cut off a 10cm segment. Place the segment to the left of the SSR and UK2.5 terminals. Make sure there is at least 2.5cm distance between the duct and SSR</p>
+<p><strong>E.</strong> Take the remainder of the 50cm duct and cut it into the 4 segments shown in the image. Make sure the left two segments are aligned, cut a piece of cover so that it covers both pieces at the same time. Repeat for the right two segments.</p>
+<figure class="image"><img src="/vt_wire_guide/s03_mapping.png"></figure>
+<p>If you are unsure of the layout of the wire ducts, fast forward to the last chapter of the guide and check the final picture of the complete layout with covers on. &nbsp;</p>
+<h3 class="toc-header" id="connecting-steppers"><a href="#connecting-steppers" class="toc-anchor">¶</a> Connecting Steppers</h3>
+<p>In this step, we will install all the stepper motor cables (except for the E motor). We recommend taking advantage of the included cable tags to label your stepper cables. Follow the table and diagram below:</p>
+<figure class="table">
+  <table style="background-color:rgb(255, 255, 255);">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Stepper Motor</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Physical Position*</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Controller Position</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">A</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Rear Right</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">MOTOR1</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">B</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Rear Left</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">MOTOR0</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Z0</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Front Left</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">MOTOR2_2</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Z1</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Rear</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">MOTOR3</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Z2</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Front Right</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">MOTOR4</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>*All positions are specified as if standing in front of an upright printer and looking towards it.</p>
+<figure style="width:50.48%;" class="image image_resized"><img src="/vt_wire_guide/s04_mapping.png"></figure>
+<p>The end result should look like this:</p>
+<figure style="width:50.8%;" class="image image_resized"><img src="/vt_wire_guide/s04_steppers.jpg"></figure>
+<h3 class="toc-header" id="connecting-inlet-and-psu"><a href="#connecting-inlet-and-psu" class="toc-anchor">¶</a> Connecting Inlet and PSU</h3>
+<p>In this step we will connect the AC Inlet, the terminals and 24V power supply. Follow the following diagram:</p>
+<figure class="image"><img src="/vt_wire_guide/s05_mapping.png"></figure>
+<p>The grounding wire should be attached using two serrated washers and screwed into the frame. This will ensure a secure electrical connection between earth and the printer frame:</p>
+<figure style="width:34.18%;" class="image image_resized"><img src="/vt_wire_guide/frame_grounding.jpg"></figure>
+<p>The end result should look like the following:</p>
+<figure style="width:51.03%;" class="image image_resized"><img src="/vt_wire_guide/s05_inlet_psu.jpg">
+  <figcaption>Note the frame grounding wire is not shown in the photo</figcaption>
+</figure>
+<h3 class="toc-header" id="checkpoint-1"><a href="#checkpoint-1" class="toc-anchor">¶</a> Checkpoint #1</h3>
+<p>Before moving on to the next step, let us check all the wiring so far. Incorrect wiring of AC/mains can be dangerous - therefore, always <strong>double check</strong> your work, and then <strong>triple check</strong> it once more:</p>
+<ol>
+  <li>Remember to check everything without the power cable plugged into the inlet!</li>
+  <li>Check that all colours match - blue wires should only go into blue terminals, red into red, green/yellow into green yellow and so on.</li>
+  <li>Use a multimeter to check continuity between all nodes of the same colour - they should be shorted.</li>
+  <li>Use the multimeter to check continuity between <mark class="pen-red">Live</mark>, <mark class="marker-blue">Neutral</mark>, <mark class="pen-green">Earth </mark>- they should <i><strong>not be shorted</strong></i> with each other.</li>
+  <li>Check that <mark class="pen-green">Earth </mark>on the inlet is shorted with the DIN rails and the build plate.</li>
+  <li>Check again that the power supply voltage input switch is set to the correct value: 115V vs 230V</li>
+  <li>After checking all of the above, plug in the power cable and switch on the inlet: The power supply should turn on and it's LED should light up.</li>
+  <li>Switch off the inlet and remove the plug, we can now move on to the next step.</li>
+</ol>
+<h3 class="toc-header" id="connecting-24v-and-build-plate"><a href="#connecting-24v-and-build-plate" class="toc-anchor">¶</a> Connecting 24V and Build Plate</h3>
+<p>In this step, we will connect the power supply to the controller board and make all the build plate connections.</p>
+<p>First connect the following items according to the following table:</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>Item</strong></td>
+        <td><strong>Cable Label</strong></td>
+        <td><strong>Controller Position</strong></td>
+      </tr>
+      <tr>
+        <td>Bed Thermistor</td>
+        <td>BED TH</td>
+        <td>TB/PF3</td>
+      </tr>
+      <tr>
+        <td>Bed Earth</td>
+        <td>BED PE</td>
+        <td>Earth (green/yellow) UK2.5 terminal</td>
+      </tr>
+      <tr>
+        <td>Bed Neutral</td>
+        <td>BED N</td>
+        <td>Neutral (blue) UK2.5N terminal.</td>
+      </tr>
+      <tr>
+        <td>Bed Live</td>
+        <td>BED L</td>
+        <td>LOAD (1) on the SSR.</td>
+      </tr>
+      <tr>
+        <td>Nozzle Probe</td>
+        <td>Z ENDSTOP</td>
+        <td>DIAG2/PG10</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Make the remaining connections by following the these steps:</p>
+<ol>
+  <li>Connect <i><strong>LOAD 2</strong></i> on the SSR to a <i><mark class="pen-red"><strong>Live</strong></mark></i> (red) UK2.5N terminal.</li>
+  <li>Connect <strong>HE0</strong> <strong>+</strong> and <strong>-</strong> terminals on the Octopus to <i><strong>3</strong></i> (+) and <i><strong>4</strong></i> (-) terminals of the SSR input. Note that the SSR end of the cable has larger fork connectors.</li>
+  <li>Connect the <strong>+</strong> terminals of <i><strong>BED_POWER</strong></i>, <i><strong>POWER</strong></i>, and <i><strong>MOTOR_POWER</strong></i>in the Octopus to the three <strong>+</strong> terminals of the 24V power supply.</li>
+  <li>Connect the <strong>-</strong> terminal of <i><strong>POWER</strong></i> in the Octopus to one of the <strong>-</strong> terminals of the 24V power supply.</li>
+</ol>
+<figure style="width:52.89%;" class="image image_resized"><img src="/vt_wire_guide/s07_mapping.png"></figure>
+<p>If in doubt, check the high resolution images <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Images/WiringGuide/s07_bed_wiring.jpg">here </a>and <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Images/WiringGuide/s07_mapping.png">here</a>. The Octopus pinout can be found <a class="is-external-link" href="https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Hardware/BIGTREETECH%20Octopus%20-%20PIN.pdf">here</a>. The final result:</p>
+<figure style="width:50.21%;" class="image image_resized"><img src="/vt_wire_guide/s07_bed_wiring.jpg"></figure>
+<h3 class="toc-header" id="raspberry-pi-connections"><a href="#raspberry-pi-connections" class="toc-anchor">¶</a> Raspberry Pi Connections</h3>
+<p>In this short step we will make the connections between the Octopus and Raspberry Pi.</p>
+<ol>
+  <li>Use the provided USB (angled) cable to connect the Octopus data port (USB C) to the Raspberry Pi (any USB A port).</li>
+  <li>To ensure a solid powered connection to the Raspberry Pi, we will use the power terminal in the input shaper adapter. Consult the <a class="is-external-link" href="http://docs.ldomotors.com/en/adxl_tool#wiring">input shaper toolkit page</a> for how to install the adapter onto the Raspberry Pi.</li>
+  <li>We will use another adapter to breakout the connection to the Octopus - consult <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Images/WiringGuide/raspi_power_connection.jpg">this photo</a>.</li>
+  <li>Finally use the provided cable to make the power connection between the Raspberry Pi and Octopus. Pay attention to polarity on the Raspberry Pi adapter.</li>
+</ol>
+<figure style="width:49.48%;" class="image image_resized"><img src="/vt_wire_guide/s08_mapping.png"></figure>
+<p>The result:</p>
+<figure style="width:49.28%;" class="image image_resized"><img src="/vt_wire_guide/s08_rpi.jpg"></figure>
+<h3 class="toc-header" id="connecting-the-toolhead-breakout-cables-part-1"><a href="#connecting-the-toolhead-breakout-cables-part-1" class="toc-anchor">¶</a> Connecting the Toolhead Breakout Cables (Part 1)</h3>
+<p>We will now begin connecting the cables between the toolhead breakout PCB and the Octopus controller.&nbsp;</p>
+<ol>
+  <li>Connect the 4 pin XY endstop cable to the 4 pin connector (Labeled GND X Y Vin) on the breakout PCB.</li>
+  <li>Connect the 14 pin toolhead cable to the 14 pin Molex Microfit connector on the breakout PCB.</li>
+  <li>Connect the remaining cables according to the following table:</li>
+</ol>
+<figure class="table">
+  <table style="background-color:rgb(255, 255, 255);">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Breakout PCB</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Cable label (breakout end)</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Controller</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Cable label (controller end)</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">E-MOTOR</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">E MOTOR</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">MOTOR5</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">E STEPPER</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">TH0</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">TH0</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">T0/PF4</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">HOTEND TH</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">CT</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">CT</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">T1/PF5</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">CHAMBER TH</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">LED*</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not used</i></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not used</i></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not used</i></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">CFAN*</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not used</i></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not used</i></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not used</i></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">CFAN LED*</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not used</i></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not &nbsp;used</i></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><i>Not used</i></td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>*The three ports with labels CFAN, LED, CFAN LED are not used in the V2 build, they are used for Voron Switchwire.</p>
+<figure style="width:48.66%;" class="image image_resized"><img src="/vt_wire_guide/s10_mapping.png"></figure>
+<p>The end result looks like <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Images/WiringGuide/s10_e_motor_th.jpg">this</a>:</p>
+<figure style="width:48.76%;" class="image image_resized"><img src="/vt_wire_guide/s10_e_motor_th.jpg"></figure>
+<h3 class="toc-header" id="connecting-the-toolhead-breakout-cables-part-2"><a href="#connecting-the-toolhead-breakout-cables-part-2" class="toc-anchor">¶</a> Connecting the Toolhead Breakout Cables (Part 2)</h3>
+<p>In this step, we will finish making all the connections between the breakout PCB and the Octopus controller. Follow the table and diagram below:</p>
+<figure class="table">
+  <table style="background-color:rgb(255, 255, 255);">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Breakout PCB</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Cable label (breakout end)</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Controller</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Cable label (controller end)</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">PCF*</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">PCF</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">FAN0/PA8</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">PART FAN</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">HEF*</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">HEF</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">FAN1/PE5</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">HOTEND FAN</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">HE0 *<i> </i>***</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">HE0</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">HE0/PA2</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">BED_OUT</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">XES</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">XES</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">DIAG0/PG6</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">X ENDSTOP</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">YES</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">YES</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">DIAG1/PG9</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Y ENDSTOP</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">ABL**</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">ABL</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">DIAG7/PG15</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Z PROBE</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p><i><u>*Pay special attention to the polarity/connection of the hotend, part fan, and hotend fan cables</u>. </i>Also <strong>double check the cables</strong> for any mistakes (they do occur from time to time). Any mistake here <strong>can cause a short circuit</strong> on the 24V power supply.</p>
+<p>**The Z probe cable has the same 3pin JST-XH connectors on both ends but has a <strong>different pinout</strong>! Follow the table carefully and pay attention to the labels on the cable.</p>
+<p>***The BED_OUT port in the Octopus controller carries more current than the HE ports, this allows you to use super high power hotends such as the Phaetus Rapido.</p>
+<figure class="image"><img src="/vt_wire_guide/s12_mapping.png"></figure>
+<p>Once you connect everything between the breakout board and Octopus, <strong>check your wiring</strong>: specifically, <strong>use a multimeter and check that 24V/GND, and 5V/GND are not shorted</strong>. Mistakes in the cables or wirings can cause a short, which can result in damage to the PCBs if powered up. The result is below, you can also check out the close up photos of the <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/Images/WiringGuide/toolhead_breakout_pcb_final.jpg">breakout PCB</a> and <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/Images/WiringGuide/toolhead_octopus_final.jpg">controller</a>.</p>
+<figure style="width:53.08%;" class="image image_resized"><img src="/vt_wire_guide/s12_endstop_probe.jpg"></figure>
+<h3 class="toc-header" id="checkpoint-2"><a href="#checkpoint-2" class="toc-anchor">¶</a> Checkpoint #2</h3>
+<p>Before moving on to the next step, let us check all the breakout board wiring. Incorrect wiring or a mistake in the cabling here can cause serious damage to the breakout board and/or controller:</p>
+<ol>
+  <li>As always, check all wiring with the machine unpowered and power cable unplugged.</li>
+  <li>Use a multimeter and check continuity between 5V and GND. They <strong>should not be shorted</strong>.</li>
+  <li>Use the multimeter to check continuity between 24V and GND. They <strong>should also not be shorted</strong>.</li>
+  <li>Double check the hotend cartridge cable. It is<strong> important</strong> that red wire is connected to + on both ends and black is connected to - on both ends.</li>
+  <li>Check the polarity of the CT, TH0, XES, YES, cables. The black wire should be connected to the GND side of the connector on <strong>both</strong> ends.</li>
+</ol>
+<h3 class="toc-header" id="connecting-the-filter-pcb-fans-led-strips-ethernet-and-display"><a href="#connecting-the-filter-pcb-fans-led-strips-ethernet-and-display" class="toc-anchor">¶</a> Connecting the Filter, PCB Fans, LED strips, Ethernet and Display</h3>
+<p>In this step, we will connect the remaining Fans and LEDs, as well as the Touch Display and Ethernet Cable.&nbsp;</p>
+<ul>
+  <li>Use the provided ribbon cable to connect the touch display to the Raspberry Pi. The ribbon cables need to be connected in a specific orientation - consult <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Images/WiringGuide/display_connection_a.jpg">this photo</a> and <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Images/WiringGuide/display_connection_b.jpg">this photo</a> (note the blue backing).</li>
+  <li>Please remember to mount LED/Fan PCBs using the printed <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/led_pcb_spacer.stl">part </a>to prevent a short with the extrusion.</li>
+  <li>User the provided ethernet cable to connect the rear ethernet jack to the Raspberry Pi.</li>
+  <li>Connect the remaining items according to the following table:</li>
+</ul>
+<figure class="table">
+  <table style="background-color:rgb(255, 255, 255);">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Item</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Cable Label</strong></td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;"><strong>Controller Position</strong></td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Electronic Compartment Fan*</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">PCB FAN</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">FAN2/PD12</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">LED Strip</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">LED STRIP</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">FAN5/PD15</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">Filter/Exhaust</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">FILTER FAN</td>
+        <td style="border-bottom:1px solid rgb(207, 216, 220);border-left:1px solid rgb(207, 216, 220);border-right:1px solid rgb(207, 216, 220);border-top:1px solid rgb(207, 216, 220);padding:0.5rem 0.75rem;">FAN3/PD13</td>
+      </tr>
+      <tr>
+        <td>Stealthburner Neopixel**</td>
+        <td>N/A</td>
+        <td>RGB_LED/PB0</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>*The PCB fans use a 3x2 XH splicer PCB to join two fans into a single cable, install the PCB onto the extrusion using a spacer and two M3x8 screws. See image of an installed PCB <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Images/WiringGuide/250/fan_pcb_positioning.jpg">here</a>.&nbsp;</p>
+<p>**The neopixel connector on the Octopus is a simple red female header, consult this <a class="is-external-link" href="https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Hardware/BIGTREETECH%20Octopus%20-%20PIN.pdf">pin diagram</a> when connecting. Pay close attention to polarity.</p>
+<figure class="image"><img src="/vt_wire_guide/s14_mapping.png"></figure>
+<p>The result is below:</p>
+<figure style="width:52.56%;" class="image image_resized"><img src="/vt_wire_guide/s14_eth_lcd.jpg"></figure>
+<h3 class="toc-header" id="finish-line"><a href="#finish-line" class="toc-anchor">¶</a> Finish Line</h3>
+<p>Congratulations! You have completed all the wiring, all that is left now is to cover up the wire ducts! We've posted a high resolution image <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Images/WiringGuide/s15_duct_cover.jpg">here</a> for you to compare your work.&nbsp;</p>
+<figure style="width:52.61%;" class="image image_resized"><img src="/vt_wire_guide/s15_duct_cover.jpg"></figure>
+<h3 class="toc-header" id="next-steps-softwarefirmware"><a href="#next-steps-softwarefirmware" class="toc-anchor">¶</a> Next Steps - Software/Firmware</h3>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td style="background-color:hsl(0, 0%, 0%);">
+          <p><mark class="pen-red"><strong>WARNING:</strong> Do not leave HE0 or HE1 connected.</mark></p>
+          <p><mark class="marker-yellow">There have been reports of Octopus boards coming preloaded with a firmware that turns on all heaters and fans as soon as you power up the board. As a result, we recommend leaving the heaters disconnected until after loading the Klipper firmware</mark></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Now that you've completed the electronics, it is time to follow the official Voron <a class="is-external-link" href="https://docs.vorondesign.com/build/software/#software-installation">Software Installation</a>. Follow BTT Octopus <a class="is-external-link" href="https://docs.vorondesign.com/build/software/configuration.html">Software Configuration</a> but remember to use the <a class="is-external-link" href="https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/master/Firmware/printer-octopus.cfg"><i><strong>LDO Klipper config file</strong></i></a> which has been customized based on connections in this wiring guide.</p>
+<figure style="width:40.01%;" class="image image_resized"><img src="/vt_wire_guide/ldotridentconfiguration.png"></figure>
+</div></template><template slot="comments"><div><comments></comments></div></template></page></div></body></html>

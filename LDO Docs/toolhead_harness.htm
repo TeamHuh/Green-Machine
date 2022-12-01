@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="UTF-8"><meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=5"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><meta name="msapplication-TileImage" content="/_assets/favicons/mstile-150x150.png"><title>LDO Toolhead Wiring Kit | LDO Docs</title><meta name="description" content=""><meta property="og:title" content="LDO Toolhead Wiring Kit"><meta property="og:type" content="website"><meta property="og:description" content=""><meta property="og:image"><meta property="og:url" content="https://docs.ldomotors.com/en/voron/toolhead_harness"><meta property="og:site_name" content="LDO Docs"><link rel="apple-touch-icon" sizes="180x180" href="/_assets/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="/_assets/favicons/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/_assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/_assets/favicons/favicon-16x16.png"><link rel="mask-icon" href="/_assets/favicons/safari-pinned-tab.svg" color="#1976d2"><link rel="manifest" href="/_assets/manifest.json"><script>var siteConfig = {"title":"LDO Docs","theme":"default","darkMode":false,"lang":"en","rtl":false,"company":"LDO Motors Co.,Ltd.","contentLicense":"alr","logoUrl":"/ldo_logo.svg"}
+var siteLangs = []
+</script><link type="text/css" rel="stylesheet" href="/_assets/css/app.13c0291036e30e8d000d.css"><script type="text/javascript" src="/_assets/js/runtime.js?1662418334"></script><script type="text/javascript" src="/_assets/js/app.js?1662418334"></script></head><body><div id="root"><page locale="en" path="voron/toolhead_harness" title="LDO Toolhead Wiring Kit" description="" :tags="[]" created-at="2022-08-10T09:28:54.851Z" updated-at="2022-08-12T03:40:40.503Z" author-name="Sue Xiong" :author-id="5" editor="ckeditor" :is-published="true" toc="W3sidGl0bGUiOiJUaGUgVG9vbGhlYWQgUENCIiwiYW5jaG9yIjoiI3RoZS10b29saGVhZC1wY2IiLCJjaGlsZHJlbiI6W3sidGl0bGUiOiJQb3J0IERlc2NyaXB0aW9ucyIsImFuY2hvciI6IiNwb3J0LWRlc2NyaXB0aW9ucyIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IkNvbm5lY3Rpb24gRGlhZ3JhbSIsImFuY2hvciI6IiNjb25uZWN0aW9uLWRpYWdyYW0iLCJjaGlsZHJlbiI6W119XX0seyJ0aXRsZSI6IlRoZSBUb29saGVhZCBDYWJsZSIsImFuY2hvciI6IiN0aGUtdG9vbGhlYWQtY2FibGUiLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJUaGUgQnJlYWtvdXQgUENCIiwiYW5jaG9yIjoiI3RoZS1icmVha291dC1wY2IiLCJjaGlsZHJlbiI6W3sidGl0bGUiOiJQb3J0IERlc2NyaXB0aW9ucyIsImFuY2hvciI6IiNwb3J0LWRlc2NyaXB0aW9ucy0xIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiVW5wb3B1bGF0ZWQgQ2lyY3VpdHJ5IG9uIHRoZSBCcmVha291dCBQQ0IiLCJhbmNob3IiOiIjdW5wb3B1bGF0ZWQtY2lyY3VpdHJ5LW9uLXRoZS1icmVha291dC1wY2IiLCJjaGlsZHJlbiI6W119XX1d" :page-id="58" sidebar="W3siaSI6InNkaS0xIiwiayI6ImxpbmsiLCJsIjoiSG9tZSIsImMiOiJtZGktaG9tZSIsInkiOiJob21lIiwidCI6Ii8ifSx7ImkiOiJzZGktMiIsImsiOiJoZWFkZXIiLCJsIjoiR3VpZGVzICYgVHV0b3JpYWxzIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH0seyJpIjoic2RpLTMiLCJrIjoiaGVhZGVyIiwibCI6IlZvcm9uIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH1d" nav-mode="TREE" comments-enabled effective-permissions="eyJjb21tZW50cyI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6ZmFsc2UsIm1hbmFnZSI6ZmFsc2V9LCJoaXN0b3J5Ijp7InJlYWQiOmZhbHNlfSwic291cmNlIjp7InJlYWQiOmZhbHNlfSwicGFnZXMiOnsicmVhZCI6dHJ1ZSwid3JpdGUiOmZhbHNlLCJtYW5hZ2UiOmZhbHNlLCJkZWxldGUiOmZhbHNlLCJzY3JpcHQiOmZhbHNlLCJzdHlsZSI6ZmFsc2V9LCJzeXN0ZW0iOnsibWFuYWdlIjpmYWxzZX19"><template slot="contents"><div><p>The LDO toolhead wiring kit is a three part system designed to simpify wiring of Voron toolheads (afterburner and stealthburner). It is composed of the toolhead PCB, toolhead cable, and breakout PCB.</p>
+<figure class="image"><img src="/toolhead_wiring_kit/dsc_3963.jpg"></figure>
+<figure class="image"><img src="/toolhead_wiring_kit/dsc_3972.jpg"></figure>
+<h2 class="toc-header" id="the-toolhead-pcb"><a href="#the-toolhead-pcb" class="toc-anchor">¶</a> The Toolhead PCB</h2>
+<p>The toolhead PCB is based on hartk's <a class="is-external-link" href="https://github.com/VoronDesign/Voron-Hardware/tree/master/Afterburner_Toolhead_PCB">toolhead PCB</a> design. The main purpose of the toolhead PCB is to combine all the signals and wires (e.g. thermistors, fans, hotend) on the toolhead PCB into a single cable. Compared to the orignal hartk design, the LDO PCB has a few minor differences:</p>
+<ol>
+  <li>The hotend cartridge connector is screw terminal instead of a microfit 3 connector.</li>
+  <li>The onboard thermistors use NTC10K thermistor, more info <a class="is-internal-link is-valid-page" href="/en/guides/klipper-thermistor#cmfb103f3950fant">here</a>.</li>
+</ol>
+<p>Apart from the above mentioned differences our PCB has the same shape and mounting hole positions, and the 14 pin microfit pinout is 100% compatible with the original hartk PCB.&nbsp;</p>
+<h3 class="toc-header" id="port-descriptions"><a href="#port-descriptions" class="toc-anchor">¶</a> Port Descriptions</h3>
+<p>The table below briefly describes the purpose of each port located on the toolhead PCB.&nbsp;</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>PCB Label</strong></td>
+        <td><strong>Name</strong></td>
+        <td><strong>Connector</strong></td>
+        <td><strong>Description</strong></td>
+      </tr>
+      <tr>
+        <td>HEF</td>
+        <td>Hotend Fan</td>
+        <td>JST-XH-2P</td>
+        <td>Fan port for cooling the hotend heatsink. Note that only 24V fans are compatible</td>
+      </tr>
+      <tr>
+        <td>PCF</td>
+        <td>Part Cooling Fan</td>
+        <td>JST-XH-2P</td>
+        <td>Port for part cooling fan. Note that only 24V fans are compatible</td>
+      </tr>
+      <tr>
+        <td>HE0</td>
+        <td>Hotend Heater</td>
+        <td>Screw Terminal</td>
+        <td>Port for hotend heater cartridge.</td>
+      </tr>
+      <tr>
+        <td>TH0</td>
+        <td>Hotend Thermistor</td>
+        <td>JST-XH-2P</td>
+        <td>Thermistor port for hotend</td>
+      </tr>
+      <tr>
+        <td>XES</td>
+        <td>X Endstop</td>
+        <td>JST-XH-2P</td>
+        <td>X endstop port. Only used in Switchwire builds, unused in V2 and Trident.</td>
+      </tr>
+      <tr>
+        <td>PROBE</td>
+        <td>Probe</td>
+        <td>JST-XH-3P</td>
+        <td>Probe port. Accepts 24V inductive probes, also compatible with <a class="is-external-link" href="https://github.com/jlas1/Klicky-Probe">klicky </a>probes.</td>
+      </tr>
+      <tr>
+        <td>E-STEP</td>
+        <td>E Stepper Motor</td>
+        <td>JST-XH-4P</td>
+        <td>Extruder stepper motor port</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<figure class="image"><img src="/toolhead_wiring_kit/toolhead_pcb_front.jpg"></figure>
+<h3 class="toc-header" id="connection-diagram"><a href="#connection-diagram" class="toc-anchor">¶</a> Connection Diagram</h3>
+<figure class="image"><img src="https://docs.ldomotors.com/v2_wire_guide/ldotoolheadpcb.png"></figure>
+<h2 class="toc-header" id="the-toolhead-cable"><a href="#the-toolhead-cable" class="toc-anchor">¶</a> The Toolhead Cable</h2>
+<p>The toolhead cable is a cable designed to be carried through the gantry cable chains within Voron printers. All individual wires within the cable are UL1332 high strand count cables. UL1332 wires have durable FEP insulation to reduce friction between the wires and cable chain. The high strand count helps prevent breakage with repeated bending cycles.</p>
+<p><mark class="marker-yellow">Caution!</mark> The <strong>zipties that come with the cable must be removed</strong> prior to installation into the cable chains. These zipties are used to prevent tangling during shipping, however, they can get caught within the cable chain and can cause damage if not removed.&nbsp;</p>
+<h2 class="toc-header" id="the-breakout-pcb"><a href="#the-breakout-pcb" class="toc-anchor">¶</a> The Breakout PCB</h2>
+<p>The breakout PCB serves the opposite purpose of the toolhead PCB - it breaks out the 14pin toolhead cable into individual ports that can then be connected to the mainboard. The breakout PCB have ports that correspond to their counterparts in the toolhead PCB. The breakout PCB also accepts the 4 pin endstop cable included in LDO kits.&nbsp;</p>
+<h3 class="toc-header" id="port-descriptions-1"><a href="#port-descriptions-1" class="toc-anchor">¶</a> Port Descriptions</h3>
+<p>The table below briefly describes the purpose of each port located on the breakout PCB.&nbsp;</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>PCB Label</strong></td>
+        <td><strong>Name</strong></td>
+        <td><strong>Connector</strong></td>
+        <td><strong>Description</strong></td>
+      </tr>
+      <tr>
+        <td>HEF/24V</td>
+        <td>Hotend Fan*</td>
+        <td>JST-XH-2P</td>
+        <td>Fan port for cooling the hotend heatsink. HEF denotes the <strong>negative</strong> pin.</td>
+      </tr>
+      <tr>
+        <td>PCF/24V</td>
+        <td>Part Cooling Fan*</td>
+        <td>JST-XH-2P</td>
+        <td>Port for part cooling fan. PCF denotes the <strong>negative</strong> pin.</td>
+      </tr>
+      <tr>
+        <td>HE0/24V</td>
+        <td>Hotend Heater*</td>
+        <td>Microfit3-2P</td>
+        <td>Port for hotend heater cartridge. HE0 denotes the <strong>negative</strong> pin.</td>
+      </tr>
+      <tr>
+        <td>TH0/GND</td>
+        <td>Hotend Thermistor</td>
+        <td>JST-XH-2P</td>
+        <td>Thermistor port for hotend. TH0 denotes the <strong>signal</strong> pin.</td>
+      </tr>
+      <tr>
+        <td>CT/GND</td>
+        <td>Chamber Thermistor</td>
+        <td>JST-XH-2P</td>
+        <td>Thermistor port for the onboard thermistor on the toolhead PCB. CT denotes the <strong>signal</strong> pin.</td>
+      </tr>
+      <tr>
+        <td>XES/GND</td>
+        <td>X Endstop</td>
+        <td>JST-XH-2P</td>
+        <td>X endstop port. XES denotes the <strong>signal </strong>pin</td>
+      </tr>
+      <tr>
+        <td>YES/GND</td>
+        <td>Y Endstop</td>
+        <td>JST-XH-2P</td>
+        <td>Y endstop port. YES denotes the <strong>signal </strong>pin</td>
+      </tr>
+      <tr>
+        <td>Vin/X/Y/GND</td>
+        <td>Input for the Endstop PCB</td>
+        <td>JST-XH-4P</td>
+        <td>The input port from the endstop PCB used in V2.4 or Trident. If a hall endstop PCB is used, extra circuit on the PCB needs to be populated to generate 5V at Vin. This port is not used in Switchwire builds.</td>
+      </tr>
+      <tr>
+        <td>24V/ABL/GND</td>
+        <td>Probe</td>
+        <td>JST-XH-3P</td>
+        <td>Probe port.&nbsp;</td>
+      </tr>
+      <tr>
+        <td>E-MOTOR</td>
+        <td>E Stepper Motor</td>
+        <td>JST-XH-4P</td>
+        <td>Extruder stepper motor port</td>
+      </tr>
+      <tr>
+        <td>CFAN/24V</td>
+        <td>Chamber Fan**</td>
+        <td>JST-XH-2P</td>
+        <td>&nbsp;Connects to the electronics chamber fan in the switchwire. CFAN denotes the <strong>negative </strong>pin.</td>
+      </tr>
+      <tr>
+        <td>LED/24V</td>
+        <td>LED**</td>
+        <td>JST-XH-2P</td>
+        <td>&nbsp;Connects to the LED strip in the switchwire. LED denotes the <strong>negative </strong>pin.</td>
+      </tr>
+      <tr>
+        <td>CFAN/LED</td>
+        <td>Chamber Fan + LED Control Signal**</td>
+        <td>JST-XH-2P</td>
+        <td>&nbsp;Connects to the LED/CFAN control signals on the mainboard. Only used in Switchwire.&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<figure class="image"><img src="/toolhead_wiring_kit/beakout_pcb_front.jpg"></figure>
+<p>*<mark class="marker-yellow">Caution!</mark> Note that <strong>polarity matters</strong> when making connections between the breakout PCB and your mainboard. <strong>Incorrect polarity can cause a short circuit</strong> and destroy your mainboard!&nbsp;</p>
+<p>**Only used in Switchwire builds.</p>
+<h3 class="toc-header" id="unpopulated-circuitry-on-the-breakout-pcb"><a href="#unpopulated-circuitry-on-the-breakout-pcb" class="toc-anchor">¶</a> Unpopulated Circuitry on the Breakout PCB</h3>
+<p>The breakout PCB contains two circuits that may or may not be populated:</p>
+<ol>
+  <li>Mosfet circuit for CFAN/LED. This circuit is only populated for breakout boards supplied in Switchwire kits.</li>
+  <li>5V power supply circuit. This circuit generates a small 5V supply the Vin pin for those that wish to use the <a class="is-external-link" href="https://github.com/VoronDesign/Voron-Hardware/tree/master/Hall_Effect_XY_Endstop">Hall Endstop PCB</a>. If you wish to solder this circuit yourself, check the circuit below. Note that this circuit is not designed for high current loads and should only be used to power the hall endstop PCB.</li>
+</ol>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="3">Breakout Board 5V circuit</td>
+      </tr>
+      <tr>
+        <td>Ref</td>
+        <td>Item</td>
+        <td>Form Factor</td>
+      </tr>
+      <tr>
+        <td>U1</td>
+        <td>7805 Voltage Regulator</td>
+        <td>&nbsp;SOT-89</td>
+      </tr>
+      <tr>
+        <td>C3</td>
+        <td>330NF, 50V Capacitor</td>
+        <td>0603</td>
+      </tr>
+      <tr>
+        <td>C4</td>
+        <td>100NF, 50V Capacitor</td>
+        <td>0603</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+</div></template><template slot="comments"><div><comments></comments></div></template></page></div></body></html>

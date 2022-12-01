@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="UTF-8"><meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=5"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><meta name="msapplication-TileImage" content="/_assets/favicons/mstile-150x150.png"><title>LDO Input Shaper Toolkit for Klipper | LDO Docs</title><meta name="description" content=""><meta property="og:title" content="LDO Input Shaper Toolkit for Klipper"><meta property="og:type" content="website"><meta property="og:description" content=""><meta property="og:image"><meta property="og:url" content="https://docs.ldomotors.com/adxl_tool"><meta property="og:site_name" content="LDO Docs"><link rel="apple-touch-icon" sizes="180x180" href="/_assets/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="/_assets/favicons/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/_assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/_assets/favicons/favicon-16x16.png"><link rel="mask-icon" href="/_assets/favicons/safari-pinned-tab.svg" color="#1976d2"><link rel="manifest" href="/_assets/manifest.json"><script>var siteConfig = {"title":"LDO Docs","theme":"default","darkMode":false,"lang":"en","rtl":false,"company":"LDO Motors Co.,Ltd.","contentLicense":"alr","logoUrl":"/ldo_logo.svg"}
+var siteLangs = []
+</script><link type="text/css" rel="stylesheet" href="/_assets/css/app.13c0291036e30e8d000d.css"><script type="text/javascript" src="/_assets/js/runtime.js?1662418334"></script><script type="text/javascript" src="/_assets/js/app.js?1662418334"></script></head><body><div id="root"><page locale="en" path="adxl_tool" title="LDO Input Shaper Toolkit for Klipper" description="" :tags="[]" created-at="2022-07-30T22:36:30.974Z" updated-at="2022-11-04T16:51:27.237Z" author-name="LDO" :author-id="6" editor="ckeditor" :is-published="true" toc="W3sidGl0bGUiOiJNb3VudGluZyIsImFuY2hvciI6IiNtb3VudGluZyIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IldpcmluZyIsImFuY2hvciI6IiN3aXJpbmciLCJjaGlsZHJlbiI6W119LHsidGl0bGUiOiJTb2Z0d2FyZSBJbnN0YWxsYXRpb24iLCJhbmNob3IiOiIjc29mdHdhcmUtaW5zdGFsbGF0aW9uIiwiY2hpbGRyZW4iOltdfSx7InRpdGxlIjoiQ2hlY2tpbmcgdGhlIFNldHVwIiwiYW5jaG9yIjoiI2NoZWNraW5nLXRoZS1zZXR1cCIsImNoaWxkcmVuIjpbXX0seyJ0aXRsZSI6IkNhbGlicmF0aW9uIiwiYW5jaG9yIjoiI2NhbGlicmF0aW9uIiwiY2hpbGRyZW4iOltdfV0=" :page-id="55" sidebar="W3siaSI6InNkaS0xIiwiayI6ImxpbmsiLCJsIjoiSG9tZSIsImMiOiJtZGktaG9tZSIsInkiOiJob21lIiwidCI6Ii8ifSx7ImkiOiJzZGktMiIsImsiOiJoZWFkZXIiLCJsIjoiR3VpZGVzICYgVHV0b3JpYWxzIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH0seyJpIjoic2RpLTMiLCJrIjoiaGVhZGVyIiwibCI6IlZvcm9uIiwiYyI6bnVsbCwieSI6bnVsbCwidCI6bnVsbH1d" nav-mode="TREE" comments-enabled effective-permissions="eyJjb21tZW50cyI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6ZmFsc2UsIm1hbmFnZSI6ZmFsc2V9LCJoaXN0b3J5Ijp7InJlYWQiOmZhbHNlfSwic291cmNlIjp7InJlYWQiOmZhbHNlfSwicGFnZXMiOnsicmVhZCI6dHJ1ZSwid3JpdGUiOmZhbHNlLCJtYW5hZ2UiOmZhbHNlLCJkZWxldGUiOmZhbHNlLCJzY3JpcHQiOmZhbHNlLCJzdHlsZSI6ZmFsc2V9LCJzeXN0ZW0iOnsibWFuYWdlIjpmYWxzZX19"><template slot="contents"><div><p>The LDO input shaper toolkit provides all the necessary parts for performing Klipper input shaper calibration with minimal hassle. For detailed information regarding klipper input shaper functionality see this <a class="is-external-link" href="https://www.klipper3d.org/Measuring_Resonances.html">page</a>. The toolkit contains an easy to mount PCB containing the ADXL345 accelerometer as well as a lightweight FFC ribbon cable and RPI connector board for easy connection between the accelerometer and your Raspberry Pi.&nbsp;</p>
+<h2 class="toc-header" id="mounting"><a href="#mounting" class="toc-anchor">¶</a> Mounting</h2>
+<p>A small part can to be printed for mounting the accelerometer PCB onto various toolheads:&nbsp;</p>
+<ul>
+  <li><a class="is-external-link" href="https://github.com/MotorDynamicsLab/InputShaperToolkit/blob/main/STLs/MiniAfterburnerADXLMount.stl">Mini Afterburner Mount</a> - for Voron 0.1</li>
+  <li><a class="is-external-link" href="https://github.com/MotorDynamicsLab/InputShaperToolkit/blob/main/STLs/AfterburnerADXLMount.stl">Afterburner Mount</a> - for Afterburner (Voron 2.4, Trident, Switchwire)</li>
+  <li><a class="is-external-link" href="https://github.com/VoronDesign/Voron-Stealthburner/blob/main/STLs/Stealthburner/ADXL345_Mounts/sb_adxl_mount_ldo_15mm_c_c.stl">Stealthburner Mount</a> - for Afterburner (Voron 2.4, Trident, Switchwire)</li>
+</ul>
+<p>If a compatible mount is not available, or if you want to design your own mount, please refer to the following drawing:</p>
+<figure style="width:37.15%;" class="image image_resized"><img src="/adxl_tool/pcb_outline.png"></figure>
+<p>Alternatively, you may also choose to mount the accelerometer using double sided tape.&nbsp;</p>
+<h2 class="toc-header" id="wiring"><a href="#wiring" class="toc-anchor">¶</a> Wiring</h2>
+<p>Wiring the input shaper tool is simple, and not intended to be wired permanently. First attach the FFC ribbon cable to each PCB: carefully pull up the black tab on the FFC connector, then insert the FFC ribbon cable and push the tab back in. Take care when pulling up the black tab! It is fragile and <strong>will break</strong> if pulled with excessive force. To make sure the polarity of the ribbon cable is correct, refer to the following picture:</p>
+<p>Note: The ribbon cable is NOT to be run in cable chains and should be connected directly for input shaping and removed afterwards.</p>
+<figure style="width:38.7%;" class="image image_resized"><img src="/adxl_tool/ffc_polarity.jpg">
+  <figcaption>Check that the blue side of the FFC cable is oriented correctly</figcaption>
+</figure>
+<p>Now install the smaller PCB onto your Raspberry Pi as follows:</p>
+<figure style="width:38.39%;" class="image image_resized"><img src="/adxl_tool/rpi_mounting.jpg">
+  <figcaption>Mounting Orientation for Version 1 of the ADXL Pi PCB</figcaption>
+</figure>
+<figure style="width:38.02%;" class="image image_resized"><img src="/adxl_tool/adxl_mount2.jpg">
+  <figcaption>Mounting Orientation for Version 2 of the ADXL Pi PCB</figcaption>
+</figure>
+<figure style="width:39.14%;" class="image image_resized"><img src="/input_shaper_kit/pi_zero_2w.jpg">
+  <figcaption>Mounting Orientation for Version 3 of the ADXL PCB on Pi Zero 2W</figcaption>
+</figure>
+<p>Note that Version 2 of the Pi PCB integrates a screw terminal for the 5V Rail of on the Raspberry Pi. This screw terminal can be used to supply power to the Raspberry Pi instead the USB port (Micro on RPi3 and Type C on RPi4).</p>
+<figure class="image"><img src="/input_shaper_kit/adxl_circuit_diagram.jpeg">
+  <figcaption>ADXL PCB circuit diagram</figcaption>
+</figure>
+<p>&nbsp;</p>
+<h2 class="toc-header" id="software-installation"><a href="#software-installation" class="toc-anchor">¶</a> Software Installation</h2>
+<p>Before you can start running input shaper calibration, you need to install a few software packages on your Raspberry Pi. Refer to the <a class="is-external-link" href="https://www.klipper3d.org/Measuring_Resonances.html#software-installation">software installation</a> section in the klipper input shaper documentation.</p>
+<h2 class="toc-header" id="checking-the-setup"><a href="#checking-the-setup" class="toc-anchor">¶</a> Checking the Setup</h2>
+<p>To test everything works correctly, run the command <code>ACCELEROMETER_QUERY</code> in your klipper console. If everything is correct, you should see some measurements from the accelerometer on the console output.&nbsp;</p>
+<h2 class="toc-header" id="calibration"><a href="#calibration" class="toc-anchor">¶</a> Calibration</h2>
+<p>The easiest way to perform calibration is to simply run the command <code>SHAPER_CALIBRATE</code> in your klipper console. Be sure to read the <a class="is-external-link" href="https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration">corresponding section</a> in klipper's documentation for more details and advanced commands and settings.&nbsp;</p>
+</div></template><template slot="comments"><div><comments></comments></div></template></page></div></body></html>
